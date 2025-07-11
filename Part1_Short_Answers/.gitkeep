@@ -1,1 +1,76 @@
+# Part 1: Short Answer Questions
+
+## 1. Problem Definition (6 points)
+
+**Hypothetical AI Problem:**  
+Predicting student dropout rates in universities.
+
+**Objectives:**
+1. Identify high-risk students early.
+2. Reduce dropout rates by 15%.
+3. Optimize intervention strategies.
+
+**Stakeholders:**
+- University administration.
+- Academic advisors.
+
+**KPI:**  
+Percentage reduction in student dropout rates.
+
+---
+
+## 2. Data Collection & Preprocessing (8 points)
+
+**Data Sources:**
+1. Student academic records (grades, attendance).
+2. Demographic and socio-economic data.
+
+**Potential Bias:**  
+Students from marginalized backgrounds may be underrepresented or misrepresented, leading to unfair predictions.
+
+**Preprocessing Steps:**
+1. Handle missing data (impute or remove incomplete rows).
+2. Normalize numeric features (e.g., grades, attendance).
+3. Encode categorical data (e.g., course types, demographic labels).
+
+---
+
+## 3. Model Development (8 points)
+
+**Chosen Model:** Random Forest
+
+**Justification:**  
+- Handles tabular data well.
+- Robust to outliers and missing data.
+- Provides feature importance for interpretability.
+
+**Data Split:**
+- 70% Training
+- 15% Validation
+- 15% Test
+
+**Hyperparameters to Tune:**
+1. `n_estimators` (number of trees) – to balance accuracy and computational cost.
+2. `max_depth` – to prevent overfitting.
+
+---
+
+## 4. Evaluation & Deployment (8 points)
+
+**Evaluation Metrics:**
+1. Accuracy – to measure the proportion of correct predictions.
+2. F1-Score – to balance precision and recall, important if dropouts are a minority class.
+
+**Concept Drift:**  
+Concept drift occurs when data distributions change over time, reducing model accuracy.
+
+**Monitoring Concept Drift:**  
+Regularly evaluate model performance on new data; retrain using recent student data periodically.
+
+**Technical Challenge:**  
+Scalability of predictions across large student populations while maintaining low latency for real-time interventions.
+
+---
+
+✅ End of Part 1
  
