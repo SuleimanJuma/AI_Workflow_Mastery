@@ -1,4 +1,4 @@
-"# Part 2: Case Study Application" 
+
 # Part 2: Case Study Application
 
 ## Scenario
